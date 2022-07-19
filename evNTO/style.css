@@ -1,0 +1,380 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,500&display=swap");
+
+/* Global Variable */
+:root {
+  --main: #fc0000;
+  --box_shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.4),
+    inset 10px 10px 10px -10px rgba(0, 0, 0, 0.9);
+}
+*::selection {
+  background: var(--main);
+  color: #fff;
+}
+* {
+  transition: 0.3s;
+  font-family: "Besley", serif;
+}
+
+html::-webkit-scrollbar {
+  width: 10px !important;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--main) !important;
+}
+html::-webkit-scrollbar-track {
+  background: #000 !important;
+}
+.btn {
+  width: 300px;
+  background: var(--main);
+  color: #fff !important;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+.btn:hover {
+  /* background: #000 !important; */
+
+  letter-spacing: 3px;
+}
+/* Navbar */
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+}
+.navbar.scroll {
+  background: #000;
+  padding: 4px;
+}
+
+.navbar-brand {
+  font-size: 3em;
+  color: #fff !important;
+  padding: 0px 60px;
+}
+.navbar-brand span {
+  font-size: 1.5em;
+  color: var(--main) !important;
+  font-weight: 600;
+}
+.navbar-nav {
+  padding: 0px 60px;
+  margin-top: 50px;
+}
+.nav-link {
+  color: #fff !important;
+}
+.nav-link:hover {
+  color: var(--main) !important;
+}
+
+/* Header */
+.header {
+  position: relative;
+}
+.header img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.Overlay,
+.speaker .box .Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.4;
+  z-index: 1;
+}
+.header .Content {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  z-index: 2;
+}
+.header .Content h6 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.header .Content h6 span {
+  font-size: 55px;
+  color: var(--main);
+}
+.header .Content #counter {
+  font-size: 80px;
+}
+.header .carousel-control-prev,
+.header .carousel-control-next {
+  z-index: 2;
+}
+
+/* About us Section */
+.about {
+  margin: 200px auto;
+}
+.about img {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+}
+.about .col-sm-4 {
+  margin-top: 70px;
+}
+.about .col-sm-4 h6 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--main) !important;
+}
+.about .col-sm-4 h5 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.about .second_row {
+  background: #000;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+.about .second_row h6 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.about .second_row h6 span {
+  color: var(--main) !important;
+  font-weight: 600;
+  font-size: 55px;
+}
+
+/* custom Section Start */
+.custom {
+  margin-bottom: 200px;
+}
+.custom .box {
+  overflow: hidden;
+}
+.custom img {
+  width: 100vw !important;
+}
+.custom .box:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.custom .col-sm-4 h6 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+.custom .col-sm-4 p {
+  font-size: 13px;
+  margin: 10px auto;
+}
+.custom .third_row {
+  background: #000;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+.custom .third_row h6 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.custom .third_row h6 span {
+  color: var(--main) !important;
+  font-size: 45px;
+  text-decoration: underline;
+}
+
+/* Custom Section End */
+
+/* Second Header Start */
+.second_header {
+  position: relative;
+  margin-bottom: 200px;
+}
+.second_header img {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+}
+.second_header .SecondHeaderContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+}
+.second_header .SecondHeaderContent h6 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.second_header .SecondHeaderContent #counter1 {
+  font-size: 70px;
+}
+
+/* Join the Event Section Start */
+.join {
+  margin: 200px auto;
+}
+.join h6 {
+  font-size: 20px;
+  color: var(--main) !important;
+}
+.join h5 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.join h5 span {
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--main);
+}
+.join .box {
+  overflow: hidden;
+}
+.join img {
+  object-fit: cover;
+  height: 550px;
+  width: 100%;
+}
+.join .box:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+/* Join The Event Section End */
+/* Speaker Section Sta1rt */
+.speaker {
+  margin-bottom: 200px;
+  position: relative;
+}
+.speaker .content,
+.news .content {
+  text-align: center;
+  margin: 40px auto;
+}
+.speaker .content h6,
+.news .content h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main);
+}
+.speaker .content h5,
+.news .content h5 {
+  font-size: 45px;
+  font-weight: 900;
+}
+.speaker .row {
+  margin: 100px auto;
+}
+.speaker .box {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.speaker .box img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+.speaker .box:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.speaker .box:hover .boxContent {
+  opacity: 1;
+}
+.speaker .boxContent {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  background: #000;
+  opacity: 0;
+  z-index: 2;
+}
+.speaker .boxContent h6 {
+  font-size: 60px;
+}
+/* Speaker Section End */
+
+/* News Section Start */
+.news {
+  margin-bottom: 200px;
+}
+.news .row {
+  margin: 70px auto;
+}
+.news .box {
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.4),
+    inset 10px 10px 10px -10px rgba(0, 0, 0, 0.9);
+}
+.news .boxContent {
+  padding: 20px;
+}
+.news .mid {
+  margin-top: 40px;
+}
+.news .boxContent h6 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.news img {
+  cursor: pointer;
+}
+.news .boxContent a {
+  color: var(--main) !important;
+  font-size: 25px;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  padding: 20px;
+  text-align: center;
+}
+footer a {
+  color: #fff !important;
+  font-size: 25px;
+}
+
+/* Modal Section Start */
+.modal-body {
+  background: #000 !important;
+  color: #fff !important;
+}
+.modal .container h6 {
+  font-size: 40px;
+  text-align: center;
+  margin: 20px auto;
+  font-weight: 600;
+}
+.modal .container input,
+.modal .container textarea {
+  border-radius: 15px !important;
+  font-weight: 600;
+  background: none !important;
+  color: #fff !important;
+}
+.modal .container .form-group {
+  margin: 10px auto;
+}
+.modal .container .btn {
+  width: 100%;
+  margin: 10px auto;
+}
+.modal .container input::placeholder,
+.modal .container textarea::placeholder {
+  color: #fff !important;
+}
